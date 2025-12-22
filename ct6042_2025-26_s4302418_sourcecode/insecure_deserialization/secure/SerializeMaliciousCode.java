@@ -1,4 +1,6 @@
-package insecure;
+package secure;
+
+import insecure.MaliciousCode;
 
 import java.io.FileOutputStream;
 import java.io.IOException;
@@ -9,7 +11,7 @@ import java.io.ObjectOutputStream;
 
 
         public static void main(String[] args) {
-            MaliciousCode malicious = new MaliciousCode(); // new malicious object
+            insecure.MaliciousCode malicious = new MaliciousCode(); // new malicious object
 
             // serializes the malicious code for transmission or storage
             try (FileOutputStream fileOut = new FileOutputStream("malicious.ser");

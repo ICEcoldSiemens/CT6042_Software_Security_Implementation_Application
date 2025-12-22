@@ -1,4 +1,6 @@
-package normal;
+package secure;
+
+import normal.User;
 
 import java.io.FileOutputStream;
 import java.io.IOException;
