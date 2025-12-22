@@ -9,7 +9,7 @@ $sql_query = "SELECT * FROM users WHERE username = '$username' AND password = '$
 $result = mysqli_query($conn, $sql_query);
 
 if (mysqli_num_rows($result) > 0) {
- echo "Login successful. Welcome, " . $username;
+ echo "Login successful.";
 } else {
  echo "Invalid credentials!";
 }
